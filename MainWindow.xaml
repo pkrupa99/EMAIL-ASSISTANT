@@ -1,0 +1,44 @@
+﻿<Window x:Class="MailGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MailGenerator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblEmailAssistant" Content="EMAIL ASSISTANT" HorizontalAlignment="Left" Height="58" Margin="184,53,0,0" VerticalAlignment="Top" Width="334" FontSize="36" FontFamily="Tahoma"/>
+
+        <Image x:Name="imgMessLogo" HorizontalAlignment="Left" Height="71" Margin="490,44,0,0" VerticalAlignment="Top" Width="92">
+            <Image.Source>
+                <BitmapImage UriSource="C:\Users\Patrycja\Documents\C# Mail\mailLogo.jpg" />
+            </Image.Source>
+        </Image>
+        <Button x:Name="buttonInvoiceSend" Content="Send Invoices to Customers" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="245" FontSize="16"  Foreground="White" Background="Black" Margin="287,147,0,0" Click="buttonInvoiceSend_Click"/>
+        <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.616,0.519" Margin="230,155,0,0">
+            <Image.Source>
+                <BitmapImage UriSource="C:\Users\Patrycja\Documents\C# Mail\folderLogo_.jpg" />
+            </Image.Source>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="88.979000000000013"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="buttonMailReport" Content="Prepare mail report in Excel" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="245" FontSize="16"  Foreground="White" Background="Black" Margin="286,239,0,0" Click="buttonMailReport_Click"/>
+        <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="65" Margin="228,236,0,0">
+            <Image.Source>
+                <BitmapImage UriSource="C:\Users\Patrycja\Documents\C# Mail\excelLogo.jpg" />
+            </Image.Source>
+        </Image>
+        <Button x:Name="buttonMailRules" Content="Apply rules to the mail box" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="245" FontSize="16"  Foreground="White" Background="Black" Margin="287,327,0,0" Click="buttonMailRules_Click"/>
+        <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.5,0.5"  Margin="230,326,0,0"  >
+            <Image.Source>
+                <BitmapImage UriSource="C:\Users\Patrycja\Documents\C# Mail\outlookLogo.jpg"/>
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
